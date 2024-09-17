@@ -6,3 +6,5 @@
 
 ## 2. `progetto1.service`
 **Descrizione**: File di setup necessario all'esecuzione di `server.js` all'avvio del SO. Si trova nel percorso assoluto `/etc/systemd/system/progetto1.service`.
+
+I dati sono accessibili all'url http://localhost:3000/api/usage
