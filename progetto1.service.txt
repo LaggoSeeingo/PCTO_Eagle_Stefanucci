@@ -1,0 +1,15 @@
+[Unit]
+Description=Servizio per eseguire il server Node.js di Progetto1
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/node /root/progetto1/server.js
+WorkingDirectory=/root/progetto1
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+#User=root
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
