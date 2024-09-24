@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql" // o il tipo di DB che stai usando
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Dati {
+  id            Int     @id @default(autoincrement())
+  ram_total     String
+  ram_free      String
+  ram_used      String
+  ram_usage     String
+  cpu_usage     String
+  disk_total    String
+  disk_free     String
+  disk_used     String
+  disk_usage    String
+  ram_stressed  Boolean @default(false) 
+  cpu_stressed  Boolean @default(false) 
+  disk_stressed Boolean @default(false)
+}

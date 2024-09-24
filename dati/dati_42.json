@@ -1,0 +1,20 @@
+{
+  "RAM": {
+    "total": "3844.23 MB",
+    "free": "2195.79 MB",
+    "used": "1648.45 MB",
+    "usage": "42.88%",
+    "stressed": false
+  },
+  "CPU": {
+    "usage": "33.30%",
+    "stressed": false
+  },
+  "Disk": {
+    "total": "36493.83 MB",
+    "free": "32563.97 MB",
+    "used": "3929.86 MB",
+    "usage": "10.77%",
+    "stressed": false
+  }
+}
