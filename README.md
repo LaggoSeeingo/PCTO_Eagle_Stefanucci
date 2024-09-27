@@ -1,5 +1,5 @@
 
-# Descrizione del progetto
+# Descrizione di progetto2
 
 ## 1. `server.js`
 **Descrizione**: File che contiene il primo programma costantemente in esecuzione tramite pm2, contenuto nella cartella `progetto1`. Si occupa di leggere i dati di telemetria del raspberry e salvarli in una cartella "Dati" sotto forma di file json.
