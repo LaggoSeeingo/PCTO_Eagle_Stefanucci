@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Dati {
+  id           Int      @id @default(autoincrement())
+  timestamp     String
+  ram_total     String
+  ram_free      String
+  ram_used      String
+  ram_usage     String
+  cpu_usage     String
+  disk_total    String
+  disk_free     String
+  disk_used     String
+  disk_usage    String
+  ram_stressed  Boolean  @default(false)
+  cpu_stressed  Boolean  @default(false)
+  disk_stressed Boolean  @default(false)
+}
